@@ -1,0 +1,13 @@
+<!-- weather.component.html -->
+<div class="container">
+  <div *ngIf="weatherData">
+    <h2 class="city">{{ weatherData.name }}</h2>
+            <div class="t"><h1 class="temp">{{ weatherData.main.temp }} °C</h1></div> 
+            <div class="middle">
+                <img src="https://openweathermap.org/img/wn/{{weatherData.weather[0].icon}}.png" alt="" class="icon">
+                <div class="desc">{{ weatherData.weather[0].description }}</div>
+            </div> 
+            <div class="humidity">Humidity : {{weatherData.main.humidity}}</div>
+            <div class="wind">Wind : {{weatherData.wind.speed}} m/s</div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+
+.temp{
+    margin-bottom: 0;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+}
+
+.loading{
+    visibility: hidden;
+    max-width: 20px;
+    position: relative;
+}
+
+.loading::after{
+    color: white;
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
