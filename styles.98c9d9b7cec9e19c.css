@@ -1,0 +1,1 @@
+body{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;margin:0%;background-image:url("https://source.unsplash.com/1600x900/?{{ searchCity }}");font-family:sans-serif;background-repeat:no-repeat;background-size:cover}
